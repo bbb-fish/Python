@@ -1,0 +1,132 @@
+https://www.youtube.com/watch?v=Y9XZQO1n_7c
+
+https://git-scm.com/book/en/v2
+
+
+GETTING STARTED
+
+
+git init
+
+git status
+
+git add readme.txt
+
+git status
+
+git add
+
+git commit
+
+git status
+
+git commit
+
+git log
+
+git add .
+
+git add *.html
+
+touch .gitignore
+
+git add .
+
+git commit -m 'adding ignore file'
+
+
+
+BRANCHING & MERGING
+
+git branch MyBranch
+
+git checkout MyBranch
+
+touch index.css
+
+git add .
+
+git commit -m 'new updates'
+
+git checkout master
+
+git status
+
+git merge MyBranch
+
+
+
+COMMIT / MERGE CONFLICTS
+
+git commit -a -m 'change 6'
+
+git checkout MyBranch
+
+git commit -a -m 'change 7'
+
+git merge master
+
+git status
+
+FIX THE PROBLEMS
+
+git commit -a -m 'merge from master'
+
+git status
+
+git mergetool
+
+
+
+STASH
+
+touch newfile.txt
+
+git checkout master
+
+git status
+
+git checkout MyBranch
+
+git add.
+
+git stash
+
+git status
+
+git stash apply
+
+
+
+REMOTE REPOSITORIES
+
+git remote
+
+git clone https://github.com/bbb-fish/Python.git
+
+git remote
+
+cd python    
+ 
+git remote
+
+git remote -v
+
+git fetch origin --- Could be different based on git remote (origin could be different)
+
+git pull origin
+
+git commit
+
+git push origin master
+
+git remote add MyRepo https://github.com/bbb-fish/[MyRepo].git
+
+git remote
+
+git remote -v
+
+git fetch MyRepo
+
+
+

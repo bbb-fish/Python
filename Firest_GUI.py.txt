@@ -1,0 +1,58 @@
+#======================
+# imports
+#======================
+import tkinter as tk
+
+#======================
+# GUI Specifics
+#======================
+
+# Create instance
+win = tk.Tk()
+
+# Add a title
+win.title("Python GUI")
+
+# Adding a label
+ttk.Label(win, text="A Label").grid(column=0, row=0)
+
+# Adding a label that will be modified
+a_label = ttk.Label(win, text="Modify Me")
+a_label.grid(column=0, row=1)
+
+# Button Click Even Function
+def click_me():
+	action.configure(text="** I have been Clicked! **")
+	a_label.configure(foreground='red')
+	a_label.configure(text='Modified!!')
+
+# Adding a button
+action = ttk.Button(win, text="Click Me!", command=click_me)
+action.grid(column=1, row=1)
+
+# Modified Button Click Function
+def click_me2():
+	action.configure(text='Hello ' + name.get())
+
+# Changing our Label
+ttk.Label(win, text="Enter a name:").grid(column=0, row=2)
+
+# Adding a text box Entry widget
+name = tk.StringVar()
+name_entered = ttk.Entry(win, width=12, textvariable=name)
+name_entered.grid(column=1, row=2)
+
+#=======================
+# disable resizing of window
+#=======================
+
+# Disable resizing the GUI by passing in False/False
+win.resizable(False, False)
+
+# Enable resizing x-dimension, disable y-dimension
+# win.resizable(True, False)
+
+#=======================
+# Start GUI
+#=======================
+win.mainloop()
